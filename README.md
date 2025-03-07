@@ -17,7 +17,7 @@ in progress
 To succeed in the exercises, the unshaded fields must be updated until the network configuration is properly communicating. For each level, a non-functioning network diagram will be provided as an example, which I will use to explain my implementation of the exercises in the sections below.
 
 <details>
-  <summary>###Level 1</summary>
+  <summary>Level 1</summary>
   <br>
 
 example of level 1 explaning 
@@ -25,7 +25,7 @@ example of level 1 explaning
 
   </details>
 
----
+--
 
 
 ## General information
