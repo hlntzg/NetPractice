@@ -22,11 +22,85 @@ To succeed in the exercises, the unshaded fields must be updated until the netwo
 
 example of level 1 explaning 
 
+  </details>
+
+<details>
+  <summary>Level 2</summary>
+  <br>
+
+example of level 
 
   </details>
 
---
+<details>
+  <summary>Level 3</summary>
+  <br>
 
+example of level 
+
+  </details>
+
+<details>
+  <summary>Level 4</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+
+<details>
+  <summary>Level 5</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+
+<details>
+  <summary>Level 6</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+
+<details>
+  <summary>Level 7</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+<details>
+  <summary>Level 8</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+<details>
+  <summary>Level 9</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+
+<details>
+  <summary>Level 10</summary>
+  <br>
+
+example of level 
+
+  </details>
+
+---
 
 ## General information
 
