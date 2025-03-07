@@ -18,12 +18,14 @@ To succeed in the exercises, the unshaded fields must be updated until the netwo
 
 <details>
   <summary>###Level 1</summary>
-
+  <br>
 
 example of level 1 explaning 
 
 
   </details>
+
+---
 
 
 ## General information
