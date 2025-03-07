@@ -5,10 +5,10 @@
 The project involves configuring small networks. As a general exercise, each network has issues that need to be fixed in order to ensure proper functionality. There are 10 levels to complete in order to finish the project. Examples of successfully completed levels can be found in the `my_config` directory.
 
 ### What is a Network?
-in progress
+A network in computing is a group of devices that can communicate with each other by sending and receiving data. The Internet is a prime example of a public network, connecting devices globally with minimal control. In contrast, private networks, such as home networks, restrict communication to specific devices, offering more security and control.
 
 ### What is TCP and IP address?
-in progress
+TCP (Transmission Control Protocol) is a protocol that ensures reliable data transfer across a network by breaking data into packets and reassembling them at the destination. It works with IP addresses, which are unique identifiers assigned to devices on a network. While TCP and IP are separate protocols, they work together to enable communication. This guide focuses on IPv4, the most widely used version of IP.
 
 ---
 
