@@ -20,7 +20,11 @@ To succeed in the exercises, the unshaded fields must be updated until the netwo
   <summary>Level 1</summary>
   <br>
 
-example of level 1 explaning 
+This level has a straightforward goal: ensure the devices that must direct communicate are in the same network. How to do it? Ensure the IP Addresses of each device are in the same range of possible IP addresses available for that network. Remember that the first and last IP are reserved for the Subnet Address and the Broadcast Address, so, anything else can be used if it is not yet assigned to a device.
+
+For the Network A1-B1, the subnet mask is `255.255.255.0` (CIDR `/24`) which give us a total number of IP addresses of `256`. Host B has `104.97.23.12` as IP Address, therefore the Subnet Address is `104.97.23.0` and the Broadcast Address is `104.97.23.255`. That means that A1 can have any IP Address in this range (except the alreday taken). As the subnet mask is `/24`, only the last portion of the 32 bits IP would be different of each device inside that network.
+
+In other case, C1-D1, the logic is similar, but because the subnet mask is `255.255.0.0` (CIDR `/16`), the only the first two octets (16 bits) of the IP Address would be the same in the IP Addresses of this network. To ensure that both hosts communicate between each other, their IP must be in the wide range (65.536) that this subnet mask allows - between `211.191.0.0` (Subnet Address) to `211.191.255.255` (Broadcast Address). Host C alreday has an IP Address (`211.191.223.75`), thus the Host D can have any IP from `211.191.0.1` to `211.191.255.254`.
 
   </details>
 
