@@ -2,7 +2,7 @@
 
 ## Project overview
 
-The project is about configuring small-networks. As a general practice exercise, the networks have issues to be fix, and so, make them run correctly. There are 10 levels to complete in order to finish the project. Examples of successfully completed levels are available on `my_config`
+The project involves configuring small networks. As a general exercise, each network has issues that need to be fixed in order to ensure proper functionality. There are 10 levels to complete in order to finish the project. Examples of successfully completed levels can be found in the `my_config` directory.
 
 ### What is a Network?
 in progress
@@ -10,7 +10,7 @@ in progress
 ### What is TCP and IP address?
 in progress
 
-( ..... )
+---
 
 ## NetPractice - Project
 
