@@ -46,7 +46,7 @@ Network C1-D1 has a narrow subnet mask set: `255.255.255.252` (CIDR `/30`) that 
   <summary>Level 3</summary>
   <br>
 
-example of level 
+The goal of this level is to allow communication between 3 devices: A1, B1, C1. All this hosts must be on the same network. One of these devices have alreday a subnet mask set (C1). Therefore, the mask `255.255.255.128` (CIDR `/25`) is the default for all the devices within the network, and it gives us information about the total range of IP Address: 128. So, we can assume that the range for this particular network is from `xxx.xxx.xxx.0` to `xxx.xxx.xxx.127` (excluding the extremities). The IP Address of one of the 3 host is already set: A1. This host IP is `104.198.50.125` which is within the range we just assume, and give us the network portion of the 32 bits IP Addresses for the others devices.
 
   </details>
 
