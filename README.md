@@ -33,7 +33,7 @@ In other case, C1-D1, the logic is similar, but because the subnet mask is `255.
   <summary>Level 2</summary>
   <br>
 
-All devices in the same network to have the same mask and, remmember, it is only possible to use IP Address within the respective subnet mask range - the extremities IP Addresses are reserved for the Subnet Address and the Broadcast Address.
+All devices in the same network to have the same mask and, remember, it is only possible to use IP Address within the respective subnet mask range - the extremities IP Addresses are reserved for the Subnet Address and the Broadcast Address.
 
 In the Network A1-B2, the subnet mask is defined by A1 as `255.255.255.224` (CIDR `/27`) and the IP Address of B1 is already set. These informations revele that the range of IP Address for network is 32, and since the first and last are reserved, the number of available IP Address is 30, and also, that this range should include `192.168.134.222` (IP Address of B1). So, the network range is between `192.168.36.192` and `192.168.36.223`, excluding the extremities (i.e., `192.168.36.192` and `192.168.36.223` are not part of the usable range). Therefore, host A can be assigned any IP address within this range.
 
@@ -46,7 +46,7 @@ Network C1-D1 has a narrow subnet mask set: `255.255.255.252` (CIDR `/30`) that 
   <summary>Level 3</summary>
   <br>
 
-The goal of this level is to allow communication between 3 devices: A1, B1, C1. All this hosts must be on the same network. One of these devices have alreday a subnet mask set (C1). Therefore, the mask `255.255.255.128` (CIDR `/25`) is the default for all the devices within the network, and it gives us information about the total range of IP Address: 128. So, we can assume that the range for this particular network is from `xxx.xxx.xxx.0` to `xxx.xxx.xxx.127` (excluding the extremities). The IP Address of one of the 3 host is already set: A1. This host IP is `104.198.50.125` which is within the range we just assume, and give us the network portion of the 32 bits IP Addresses for the others devices.
+The goal of this level is to allow communication between 3 devices: A1, B1, C1. All this hosts must be on the same network. One of these devices have alreday a subnet mask set (C1). Therefore, the mask `255.255.255.128` (CIDR `/25`) is the default for all the devices within the network, and it gives us information about the total range of IP Address: 128. So, we can assume that the range for this particular network is from `xxx.xxx.xxx.0` to `xxx.xxx.xxx.127` (excluding the extremities). The IP Address of one of the 3 host is already set: A1. This host IP is `104.198.50.125` which is within the range we just assume, and give us the network portion (24 bits) of the 32 bits IP Addresses for the others devices.
 
   </details>
 
@@ -54,7 +54,9 @@ The goal of this level is to allow communication between 3 devices: A1, B1, C1. 
   <summary>Level 4</summary>
   <br>
 
-example of level 
+This network introduces a new element: a Router. This particular router has 3 interfaces with specifics IP Addresses and subnet masks, meaning it is possible to connect 3 networks to this device. The IP of the interface R1 must not overlap the ranges between interfaces, and, of course, have to be within the available IP Address of the subnet mask of that network.
+
+For this network (A1-B1-R1), the subnet mask should be choose based on the mask's and IP Addresses of R2 and R3.
 
   </details>
 
@@ -63,7 +65,7 @@ example of level
   <summary>Level 5</summary>
   <br>
 
-example of level 
+This level introduces the Router and the concept of Routing Table. Each host should have a routing table that allows the device to connect to the router and each other.
 
   </details>
 
