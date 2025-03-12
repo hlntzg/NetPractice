@@ -54,9 +54,14 @@ The goal of this level is to allow communication between 3 devices: A1, B1, C1. 
   <summary>Level 4</summary>
   <br>
 
-This network introduces a new element: a Router. This particular router has 3 interfaces with specifics IP Addresses and subnet masks, meaning it is possible to connect 3 networks to this device. The IP of the interface R1 must not overlap the ranges between interfaces, and, of course, have to be within the available IP Address of the subnet mask of that network.
+This network introduces a new element: a Router. This particular router has 3 interfaces with specifics IP Addresses and subnet masks, meaning it is possible to connect 3 networks to this device. The IP of the interface R1 must not overlap the ranges between other interfaces (R2, R3), and, of course, have to be within the available IP Address of the subnet mask of that network.
 
-For this network (A1-B1-R1), the subnet mask should be choose based on the mask's and IP Addresses of R2 and R3.
+For the Network A1-B1-R1, the subnet mask should be choose based on the R2 and R3 mask's and IP Addresses. R2 mask is set to `255.255.255.128` (CIDR `/25`) and R3 mask is set to `255.255.255.192` (CIDR `/26`), so the range of IP Addresses of R2 is from `82.234.113.0` to `82.234.113.127` (CIDR /25 allows 128 IP's), while for R3 it is from `82.234.113.192` to `82.234.113.255` (CIDR /26 allows a range of 64 IP's). Within this informations, it is possible to set a appropriate subnet mask and IP Addresses for Network A1-B1-R1, ensuring that this particular network does not share any of those IP's from R2 and R3. 
+
+R2:     Network portion is `82.234.113`, while the host portion range from `0` - `127`
+R3:     Network portion is `82.234.113`, while the host portion range from `192` - `255`
+
+The host portion of A1’s IP address is `132`, which lies exactly in between the host ranges of R2 and R3. The IP range from `82.234.113.128` to `82.234.113.191` provides exactly 64 available IP addresses. Therefore, a subnet mask of `255.255.255.192` (CIDR /`26`) or greater is appropriate. Ensure that the subnet mask chosen allows for at least 3 usable IP addresses (CIDR `/26` to `/29`). The next step is to assign the correct host portion of the IP address to R1 and B1 based on the chosen mask. Remember to exclude the extreme IP Addresses and avoid any overlapping IPs within router R’s subnet.
 
   </details>
 
