@@ -135,6 +135,10 @@ example of level
 
 Feel free to use and share this project. Please provide appropriate attribution when using or modifying it. This project is for educational purposes only. It may contain inaccurate information or terms.
 
+### License
+
+This project is licensed under a custom Educational Use License for Study Materials. Documentation, guidelines and study notes are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See [LICENSE](./LICENSE) for full terms.
+
 ### Copyright and contact information
 
 - Copyright (c) 2024 Helena Utzig.
